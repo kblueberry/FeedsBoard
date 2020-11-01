@@ -1,0 +1,29 @@
+a,
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  font-weight: 400;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: gold;
+  border-radius: 20px;
+  max-width: 30%;
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.button-login {
+  background: brown;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 10px auto;
+}
