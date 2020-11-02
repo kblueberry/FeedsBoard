@@ -1,37 +1,29 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {LoginComponent} from './components/login/login.component';
+import {HomePageComponent} from './components/home-page/home-page.component';
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: '',
     component: LoginComponent,
     pathMatch: 'full'
   },
-  // {
-  //   path: '',
-  //   component: MainComponent,
-  //   children: [
-  //      {
-  //        path: 'statistic',
-  //        canActivate: [AuthGuard],
-  //        loadChildren: () => import('./statistic/statistic.module').then(m => m.StatisticModule),
-  //      },
-  //      {
-  //        path: 'question/:id',
-  //        canActivate: [AuthGuard],
-  //        component: QuestionComponent
-  //      },
-  //   ]
-  // },
+  {
+    path: 'feeds',
+    component: HomePageComponent,
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [RouterModule]
 })
 
 export class AppRoutingModule {}
