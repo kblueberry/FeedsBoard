@@ -4,15 +4,22 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {LoginComponent} from './components/login/login.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
+import {AuthGuard} from './core/guards/auth.guard';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
   {
     path: 'login',
     component: LoginComponent
   },
   {
-    path: '',
-    component: HomePageComponent
+    path: 'feeds',
+    component: HomePageComponent,
+    canActivate: [AuthGuard]
   },
 ];
 

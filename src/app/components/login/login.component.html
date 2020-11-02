@@ -24,7 +24,7 @@
         <label for="password">Password</label>
 
         <input
-            type="text"
+            type="password"
             name="pass"
             id="password"
             class="form-control"
@@ -34,10 +34,14 @@
         <div *ngIf="form.password.errors" class="invalid-feedback">
             <div *ngIf="form.password.errors.required">Password is required</div>
         </div>
+
+
     </div>
 
+    <div>Enter simpson/rarara123 to login</div>
+
     <a
-        href="/"
+        href="javascript:void(0)"
         class="button button-login"
         (click)="userLogin()"
     >Log In</a>
