@@ -16,6 +16,19 @@
   margin: 20px auto;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.invalid-feedback {
+  font-size: 10px;
+  color: red;
+}
+
 .button-login {
   background: brown;
   border-radius: 5px;

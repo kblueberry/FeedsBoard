@@ -8,9 +8,26 @@
   justify-content: space-between;
 }
 
+.welcome-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .main-title {
-  align-self: center;
   font-size: 36px;
+}
+
+.logout-button {
+  margin-left: 720px;
+}
+
+.logout-button,
+.delete-button {
+  border: 1px solid brown;
+  color: brown;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 .feed-item {
