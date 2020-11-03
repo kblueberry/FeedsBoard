@@ -7,12 +7,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './components/app.component';
 import {LoginComponent} from './components/login/login.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
+import { FeedComponent } from './components/feed/feed.component';
+import { FeedArticleComponent } from './components/feed-article/feed-article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomePageComponent
+    HomePageComponent,
+    FeedComponent,
+    FeedArticleComponent
   ],
   imports: [
     BrowserModule,

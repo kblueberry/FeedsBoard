@@ -1,22 +1,112 @@
 {
-  "posts": [
+  "feeds": [
     {
-      "userId": 1,
-      "id": 1,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "feedId": 1,
+      "title": "Reddit",
+      "articles": [
+        {
+          "articleId": 1,
+          "title": "Doing things properly; 70,000 +/- 5000 excess deaths since January in the UK compared to previous years.",
+          "content": "",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/jn8ufq/doing_things_properly_70000_5000_excess_deaths/"
+        },
+        {
+          "articleId": 2,
+          "title": "Our wedding bands are laser engraved with each other's fingerprint",
+          "content": "",
+          "url": "https://www.reddit.com/r/mildlyinteresting/comments/jn9w7r/our_wedding_bands_are_laser_engraved_with_each/"
+        },
+        {
+          "articleId": 3,
+          "title": "That perfect Washington weather. Alpine Lakes Wilderness. [OC] [3008x3894]",
+          "content": "",
+          "url": "https://www.reddit.com/r/EarthPorn/comments/jn8tgr/that_perfect_washington_weather_alpine_lakes/"
+        },
+        {
+          "articleId": 4,
+          "title": "How do we know what the Milky Way looks like if we are within it?",
+          "content": "",
+          "url": "https://www.reddit.com/r/askscience/comments/jmze2j/how_do_we_know_what_the_milky_way_looks_like_if/"
+        }
+      ] 
     },
     {
-      "userId": 1,
-      "id": 2,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "feedId": 2,
+      "title": "BBC Ukraine",
+      "articles": [
+        {
+          "articleId": 1,
+          "title": "Суд в Італії виправдав українського нацгвардійця Марківа",
+          "content": "",
+          "url": "https://www.bbc.com/ukrainian/news-54794243"
+        },
+        {
+          "articleId": 2,
+          "title": "Трамп чи Байден? Кого оберуть США. Теленовини ВВС",
+          "content": "",
+          "url": "https://www.bbc.com/ukrainian/news-54803050"
+        },
+        {
+          "articleId": 3,
+          "title": "Українцям дозволили змінювати по батькові. Що це значить і коли запрацює",
+          "content": "",
+          "url": "https://www.bbc.com/ukrainian/news-54793338"
+        },
+        {
+          "articleId": 4,
+          "title": "Хто такий Сарік і чому Зеленський розповів йому про фосфорні бомби",
+          "content": "",
+          "url": "https://www.bbc.com/ukrainian/news-54793332"
+        },
+        {
+          "articleId": 5,
+          "title": "Кривавий хаос і протистояння на вулицях. Як Зеленський переконує депутатів розпустити КС",
+          "content": "",
+          "url": "https://www.bbc.com/ukrainian/news-54781135"
+        }
+      ] 
     },
     {
-      "userId": 1,
-      "id": 3,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "feedId": 3,
+      "title": "Nasa.gov",
+      "articles": [
+        {
+          "articleId": 1,
+          "title": "NASA TV Coverage Set for First Crew Rotation Flight on US Commercial Spacecraft",
+          "content": "",
+          "url": "https://www.nasa.gov/press-release/nasa-tv-coverage-set-for-first-crew-rotation-flight-on-us-commercial-spacecraft"
+        },
+        {
+          "articleId": 2,
+          "title": "NASA, Boeing Announce Crew Changes for Starliner Crew Flight Test",
+          "content": "",
+          "url": "https://www.nasa.gov/press-release/nasa-boeing-announce-crew-changes-for-starliner-crew-flight-test"
+        },
+        {
+          "articleId": 3,
+          "title": "NASA Announces Astronauts to Fly on SpaceX Crew-2 Mission to Space Station",
+          "content": "",
+          "url": "https://www.nasa.gov/press-release/nasa-announces-astronauts-to-fly-on-spacex-crew-2-mission-to-space-station"
+        },
+        {
+          "articleId": 4,
+          "title": "X-59 Cockpit Begins to Look Like a Cockpit",
+          "content": "",
+          "url": "https://www.nasa.gov/aeroresearch/image-feature/x-59-cockpit-begins-to-look-like-a-cockpit"
+        },
+        {
+          "articleId": 5,
+          "title": "More Pieces of the X-59 are Coming Together",
+          "content": "",
+          "url": "https://www.nasa.gov/aeroresearch/more-pieces-of-the-x-59-are-coming-together"
+        },
+        {
+          "articleId": 6,
+          "title": "Quiet Supersonic Flight Over Land – Lowering the Boom",
+          "content": "",
+          "url": "https://www.nasa.gov/aeroresearch/webinar-series/quiet-supersonic"
+        }
+      ] 
     }
   ],
   "comments": [
