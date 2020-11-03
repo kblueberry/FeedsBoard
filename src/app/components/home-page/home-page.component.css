@@ -1,0 +1,27 @@
+@import '../../../assets/base-styles.css';
+
+.main,
+.feeds-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.welcome-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 36px;
+}
+
+.logout-button {
+  margin-left: 720px;
+  border: 1px solid brown;
+  color: brown;
+  padding: 5px 15px;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+@import '../../../assets/base-styles.css';
+
+.welcome-title {
+  padding: 20px 0;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: gold;
+  border-radius: 20px;
+  max-width: 30%;
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.invalid-feedback {
+  font-size: 10px;
+  color: red;
+}
+
+.button-login {
+  background: brown;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 10px auto;
+}
