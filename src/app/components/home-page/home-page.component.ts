@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {User} from 'src/app/core/models/user.model';
+import {Feed} from 'src/app/core/models/feed.model';
 import {AuthService} from 'src/app/core/services/auth.service';
+import {FeedService} from 'src/app/core/services/feed.service';
 
 @Component({
   selector: 'app-home-page',
@@ -9,13 +10,12 @@ import {AuthService} from 'src/app/core/services/auth.service';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  currentUser: User;
+  feeds: Array<Feed>;
 
-  constructor(private authService: AuthService, private router: Router) {
-    this.authService.currentUser.subscribe(value => this.currentUser = value);
-  }
+  constructor(private authService: AuthService, private router: Router, private feedService: FeedService) {}
 
   ngOnInit(): void {
+    this.fetchFeeds();
   }
 
   userLogout() {
@@ -23,4 +23,13 @@ export class HomePageComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  fetchFeeds() {
+    this.feedService.getFeeds().subscribe((fetchedFeeds: Feed[]) => {
+      this.feeds = fetchedFeeds;
+    });
+  }
+
+  addNewFeed() {
+    console.log("Added new!");
+  }
 }
