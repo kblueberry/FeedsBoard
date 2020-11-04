@@ -1,27 +1,19 @@
 {
-  "feeds": [
-    {
-      "feedId": 1,
-      "title": "NPR",
-      "feedUrl": "https://feeds.npr.org/1019/feed.json"
-    },
-    {
-      "feedId": 2,
-      "title": "Daring Fireball",
-      "feedUrl": "https://daringfireball.net/feeds/json"
-    },
-    {
-      "feedId": 3,
-      "title": "Hafnia Times",
-      "feedUrl": "https://hafniatimes.com/feed.json"
-    }
-  ],
-
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ]
+    "feeds": [
+      {
+        "feedId": 1,
+        "title": "NPR",
+        "feedUrl": "https://feeds.npr.org/1019/feed.json"
+      },
+      {
+        "feedId": 2,
+        "title": "Daring Fireball",
+        "feedUrl": "https://daringfireball.net/feeds/json"
+      },
+      {
+        "feedId": 3,
+        "title": "Hafnia Times",
+        "feedUrl": "https://hafniatimes.com/feed.json"
+      }
+    ]
 }
