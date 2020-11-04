@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Article} from 'src/app/core/models/article.model';
 
 @Component({
   selector: 'app-feed-article',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed-article.component.css']
 })
 export class FeedArticleComponent implements OnInit {
+  @Input() articles: Article[];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
