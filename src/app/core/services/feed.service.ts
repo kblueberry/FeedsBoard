@@ -19,8 +19,8 @@ export class FeedService {
     return this.http.post<Feed>(`${environment.apiUrl}/feeds`, {feedId: this.generateId(), title: feedName});
   }
 
-  fetchFeedArticles(feedId) {
-    return this.http.get<Array<Article>>(`${environment.apiUrl}/articles`);
+  fetchFeedArticles(url) {
+    return this.http.get<Array<Article>>(url);
   }
 
   generateId() {

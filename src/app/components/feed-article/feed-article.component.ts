@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Article} from 'src/app/core/models/article.model';
+import {Feed} from 'src/app/core/models/feed.model';
+import {FeedService} from 'src/app/core/services/feed.service';
 
 @Component({
   selector: 'app-feed-article',
@@ -7,11 +9,17 @@ import {Article} from 'src/app/core/models/article.model';
   styleUrls: ['./feed-article.component.css']
 })
 export class FeedArticleComponent implements OnInit {
-  @Input() articles: Article[];
+  articles: Article[];
+  @Input() feed: Feed;
 
-  constructor() {}
+  constructor(private feedService: FeedService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  fetchArticles(siteUrl) {
+    this.feedService.fetchFeedArticles(siteUrl).subscribe(results => {
+      this.articles = results;
+    });
   }
 
 }
