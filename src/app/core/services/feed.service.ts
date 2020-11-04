@@ -13,4 +13,12 @@ export class FeedService {
   getFeeds() {
     return this.http.get<Array<Feed>>(`${environment.apiUrl}/feeds`);
   }
+
+  addFeed(feedName) {
+    return this.http.post<Feed>(`${environment.apiUrl}/feeds`, {feedId: this.generateId(), title: feedName});
+  }
+
+  generateId() {
+    return '_' + Math.random().toString(36).substr(2, 9);
+  }
 }

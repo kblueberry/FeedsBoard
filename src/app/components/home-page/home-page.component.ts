@@ -28,4 +28,8 @@ export class HomePageComponent implements OnInit {
       this.feeds = fetchedFeeds;
     });
   }
+
+  addNewFeed() {
+    console.log("Added new!");
+  }
 }

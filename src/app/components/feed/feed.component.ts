@@ -11,7 +11,5 @@ export class FeedComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
