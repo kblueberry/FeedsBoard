@@ -10,4 +10,6 @@
     <div class="feeds-wrapper">
         <app-feed *ngFor="let feedItem of feeds" [feed]="feedItem"></app-feed>
     </div>
+
+    <app-create-new-feed *ngIf="createNewFeed" (feedAdd)="addNewFeedToList($event)"></app-create-new-feed>
 </div>

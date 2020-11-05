@@ -9,6 +9,7 @@ import {LoginComponent} from './components/login/login.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
 import {FeedComponent} from './components/feed/feed.component';
 import {ArticlesListComponent} from './components/articles-list/articles-list.component';
+import { CreateNewFeedComponent } from './components/create-new-feed/create-new-feed.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ArticlesListComponent} from './components/articles-list/articles-list.co
     LoginComponent,
     HomePageComponent,
     FeedComponent,
-    ArticlesListComponent
+    ArticlesListComponent,
+    CreateNewFeedComponent
   ],
   imports: [
     BrowserModule,

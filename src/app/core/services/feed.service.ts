@@ -1,5 +1,5 @@
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Injectable} from '@angular/core';
+import {Injectable, OnInit} from '@angular/core';
 import {error} from 'protractor';
 import {catchError} from 'rxjs/operators';
 import {environment} from 'src/environments/environment';
@@ -10,15 +10,12 @@ import {Feed} from '../models/feed.model';
   providedIn: 'root'
 })
 export class FeedService {
+  feeds: Array<Feed> = [];
 
   constructor(private http: HttpClient) {}
 
   getFeeds() {
     return this.http.get<Array<Feed>>(`${environment.apiUrl}/feeds`);
-  }
-
-  addFeed(feedName) {
-    return this.http.post<Feed>(`${environment.apiUrl}/feeds`, {feedId: this.generateId(), title: feedName});
   }
 
   fetchFeedArticles(url) {

@@ -15,8 +15,8 @@
             formControlName="username"
         >
 
-        <div *ngIf="form.username.errors" class="invalid-feedback">
-            <div *ngIf="form.username.errors.required">Username is required</div>
+        <div *ngIf="loginForm.controls['username'].invalid" class="invalid-feedback">
+            Username is required
         </div>
     </div>
 
@@ -31,8 +31,8 @@
             formControlName="password"
         >
 
-        <div *ngIf="form.password.errors" class="invalid-feedback">
-            <div *ngIf="form.password.errors.required">Password is required</div>
+        <div *ngIf="loginForm.controls['password'].invalid" class="invalid-feedback">
+            Password is required
         </div>
 
 

@@ -1,0 +1,33 @@
+<div class="new_feed-wrapper" [formGroup]="newFeed">
+    <div class="field-wrapper">
+        <label for="feed-name">Enter feed name</label>
+
+        <input
+            type="text"
+            class="form-control feed-name"
+            id="feed-name"
+            formControlName="title"
+        >
+
+        <div *ngIf="newFeed.controls['title'].invalid" class="invalid-feedback">
+            Feed name is required
+        </div>
+    </div>
+
+    <div class="field-wrapper">
+        <label for="feed-name">Enter feed url</label>
+
+        <input
+            type="text"
+            class="feed-url form-control"
+            id="feed-url"
+            formControlName="feedUrl"
+        >
+
+        <div *ngIf="newFeed.controls['feedUrl'].invalid" class="invalid-feedback">
+            Feed URL is required
+        </div>
+    </div>
+
+    <a class="button add-button" (click)="addNewFeed()" >Add New</a>
+</div>
