@@ -26,7 +26,7 @@ const routes: Routes = [
     path: 'feeds/:feedId',
     component: ArticlesListComponent,
     canActivate: [AuthGuard]
-  }
+  },
 ];
 
 @NgModule({
