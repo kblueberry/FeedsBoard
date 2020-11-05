@@ -49,5 +49,6 @@ export class CreateNewFeedComponent implements OnInit {
     }
 
     this.feedAdd.emit({feedId, title, feedUrl} as Feed);
+    this.newFeed.reset();
   }
 }

@@ -1,4 +1,15 @@
-<a class="feed-item" routerLink="/feeds/{{feed.feedId}}" (click)="storeFeedInformation()">
-    <p class="feed-name">{{feed.title}}</p>
-    <a href="/" class="delete-button">Delete feed</a>
+<a
+    class="feed-item"
+    routerLink="/feeds/{{feed.feedId}}"
+    (click)="storeFeedInformation()"
+>
+    <img src="../../../assets/images/feed-icon.png" alt="feed-icon" class="feed-item_img" width="60px" height="60px">
+    <div class="feed-item__main">
+        <p class="feed-name">{{feed.title}}</p>
+
+        <a
+            href="/"
+            class="delete-button"
+        >Delete feed</a>
+    </div>
 </a>

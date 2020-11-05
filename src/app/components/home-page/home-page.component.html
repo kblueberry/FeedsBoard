@@ -6,7 +6,7 @@
         <a class="logout-button" (click)="userLogout()">Log Out</a>
     </div>
 
-    <a class="button add-button" (click)="addNewFeed()">Add New</a>
+    <a class="button add-button" (click)="addNewFeed()">Add New Feed</a>
     <div class="feeds-wrapper">
         <app-feed *ngFor="let feedItem of feeds" [feed]="feedItem"></app-feed>
     </div>
