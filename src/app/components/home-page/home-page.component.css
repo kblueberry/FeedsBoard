@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.feeds-wrapper {
+  width: 100vw;
+}
+
 .welcome-wrapper {
   display: flex;
   justify-content: flex-end;

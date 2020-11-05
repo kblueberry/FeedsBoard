@@ -14,6 +14,7 @@ import {FeedService} from 'src/app/core/services/feed.service';
 export class HomePageComponent implements OnInit, OnDestroy {
   feeds: Array<Feed>;
   feedsSubscription: Subscription;
+  createNewFeed = false;
 
   constructor(private authService: AuthService, private router: Router, private feedService: FeedService) {}
 
@@ -33,7 +34,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
   }
 
   addNewFeed() {
+    this.createNewFeed = true;
     console.log("Added new!");
+  }
+
+  addNewFeedToList(feed: Feed) {
+    this.feeds.push(feed);
   }
 
   ngOnDestroy() {

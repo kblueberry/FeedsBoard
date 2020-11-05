@@ -1,0 +1,16 @@
+@import '../../../assets/base-styles.css';
+@import '../login/login.component.css';
+
+.new_feed-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.field-wrapper {
+  padding-right: 10px;
+}
+
+.add-button {
+  margin: 0;
+}
