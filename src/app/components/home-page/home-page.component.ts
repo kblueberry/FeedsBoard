@@ -1,5 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {Subscription} from 'rxjs';
+
 import {Feed} from 'src/app/core/models/feed.model';
 import {AuthService} from 'src/app/core/services/auth.service';
 import {FeedService} from 'src/app/core/services/feed.service';
@@ -9,8 +11,9 @@ import {FeedService} from 'src/app/core/services/feed.service';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent implements OnInit, OnDestroy {
   feeds: Array<Feed>;
+  feedsSubscription: Subscription;
 
   constructor(private authService: AuthService, private router: Router, private feedService: FeedService) {}
 
@@ -24,12 +27,16 @@ export class HomePageComponent implements OnInit {
   }
 
   fetchFeeds() {
-    this.feedService.getFeeds().subscribe((fetchedFeeds: Feed[]) => {
+    this.feedsSubscription = this.feedService.getFeeds().subscribe((fetchedFeeds: Feed[]) => {
       this.feeds = fetchedFeeds;
     });
   }
 
   addNewFeed() {
     console.log("Added new!");
+  }
+
+  ngOnDestroy() {
+    this.feedsSubscription.unsubscribe();
   }
 }

@@ -5,7 +5,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {LoginComponent} from './components/login/login.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
 import {AuthGuard} from './core/guards/auth.guard';
-import {FeedArticleComponent} from './components/feed-article/feed-article.component';
+import {ArticlesListComponent} from './components/articles-list/articles-list.component';
 
 const routes: Routes = [
   {
@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'feeds/:feedId',
-    component: FeedArticleComponent,
+    component: ArticlesListComponent,
     canActivate: [AuthGuard]
   }
 ];
