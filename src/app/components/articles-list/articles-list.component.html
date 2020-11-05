@@ -1,0 +1,9 @@
+<a
+    href="/"
+    class="feed-article feed-item"
+    *ngFor="let article of articles"
+>
+    <p class="article-title feed-name">{{article.title}}</p>
+
+    <p class="published-at">{{article.datePublished}}</p>
+</a>

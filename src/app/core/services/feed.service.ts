@@ -1,5 +1,7 @@
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Injectable} from '@angular/core';
+import {error} from 'protractor';
+import {catchError} from 'rxjs/operators';
 import {environment} from 'src/environments/environment';
 import {Article} from '../models/article.model';
 import {Feed} from '../models/feed.model';
@@ -25,5 +27,9 @@ export class FeedService {
 
   generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
+  }
+
+  fetchFeedById(id) {
+    return this.http.get<Feed>(`${environment.apiUrl}/feeds?feedId=${id}`);
   }
 }

@@ -1,9 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+
 import {Article} from 'src/app/core/models/article.model';
 import {Feed} from 'src/app/core/models/feed.model';
-import {JSONFeed} from 'src/app/core/models/JSON-feed.model';
-import {FeedService} from 'src/app/core/services/feed.service';
+import {DataStoreService} from 'src/app/core/services/data-store.service';
 
 @Component({
   selector: 'app-feed',
@@ -13,9 +12,15 @@ import {FeedService} from 'src/app/core/services/feed.service';
 export class FeedComponent implements OnInit {
   @Input() feed: Feed;
   feedArticles: Article[];
-  jsonFeed: JSONFeed;
 
-  constructor(private feedService: FeedService, private route: ActivatedRoute, private router: Router) {}
+  constructor(private dataStore: DataStoreService) {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  storeFeedInformation() {
+    this.dataStore.feedCurrent = this.feed;
+  }
 }
+

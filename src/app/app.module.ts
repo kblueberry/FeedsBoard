@@ -7,8 +7,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './components/app.component';
 import {LoginComponent} from './components/login/login.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
-import { FeedComponent } from './components/feed/feed.component';
-import { FeedArticleComponent } from './components/feed-article/feed-article.component';
+import {FeedComponent} from './components/feed/feed.component';
+import {ArticlesListComponent} from './components/articles-list/articles-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { FeedArticleComponent } from './components/feed-article/feed-article.com
     LoginComponent,
     HomePageComponent,
     FeedComponent,
-    FeedArticleComponent
+    ArticlesListComponent
   ],
   imports: [
     BrowserModule,

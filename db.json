@@ -3,17 +3,17 @@
     {
       "feedId": 1,
       "title": "NPR",
-      "feedUrl": "https://feeds.npr.org/1019/feed.json"
+      "feedUrl": "https://cors-anywhere.herokuapp.com/https://feeds.npr.org/1019/feed.json"
     },
     {
       "feedId": 2,
       "title": "Daring Fireball",
-      "feedUrl": "https://daringfireball.net/feeds/json"
+      "feedUrl": "https://cors-anywhere.herokuapp.com/https://daringfireball.net/feeds/json"
     },
     {
       "feedId": 3,
       "title": "Hafnia Times",
-      "feedUrl": "https://hafniatimes.com/feed.json"
+      "feedUrl": "https://cors-anywhere.herokuapp.com/https://hafniatimes.com/feed.json"
     }
   ],
 
