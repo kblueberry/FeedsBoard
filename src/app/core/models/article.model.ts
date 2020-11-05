@@ -1,4 +1,7 @@
 export interface Article {
+    'feedId': number;
+    'id': number;
     'title': 'string';
-    'datePublished': Date;
+    'datePublished': 'string';
+    'url': 'string';
 }

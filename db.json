@@ -15,5 +15,71 @@
       "title": "Hafnia Times",
       "feedUrl": "https://cors-anywhere.herokuapp.com/https://hafniatimes.com/feed.json"
     }
+  ],
+
+  "articles": [
+    {
+      "feedId": 1,
+      "id": 1,
+      "title": "Touch And Go: NASA's Delicate Mission to Sample Asteroid Bennu",
+      "datePublished": "2020-11-03T04:00:31-05:00",
+      "url": "https://www.npr.org/2020/10/09/922146337/touch-and-go-nasas-delicate-mission-to-sample-asteroid-bennu?utm_medium=JSONFeed&utm_campaign=technology"
+    },
+    {
+      "feedId": 1,
+      "id": 2,
+      "title": "Touch And Go: NASA's Delicate Mission to Sample Asteroid Bennu",
+      "datePublished": "2020-11-01T08:59:52-05:00",
+      "url": "https://www.npr.org/2020/11/01/929525677/with-canned-entertainment-australian-comedian-makes-a-hit-in-the-u-s?utm_medium=JSONFeed&utm_campaign=technology"
+    },
+    {
+      "feedId": 1,
+      "id": 3,
+      "title": "Trump's Ban On TikTok Suffers Another Legal Setback",
+      "datePublished": "2020-10-30T20:21:23-04:00",
+      "url": "https://www.npr.org/2020/10/30/929656794/trumps-ban-on-tiktok-suffers-another-legal-setback?utm_medium=JSONFeed&utm_campaign=technology"
+    },
+    {
+      "feedId": 2,
+      "id": 1,
+      "title": "Nintendo Reports a Strong Quarter",
+      "datePublished": "2020-11-05T17:31:06Z",
+      "url": "https://daringfireball.net/linked/2020/11/05/nintendo-quarter"
+    },
+    {
+      "feedId": 2,
+      "id": 2,
+      "title": "The Daring Fireball Election Desk Is Calling It: Biden Wins",
+      "datePublished": "2020-11-04T21:02:30Z",
+      "url": "https://daringfireball.net/linked/2020/11/03/economist-election-model"
+    },
+    {
+      "feedId": 3,
+      "id": 1,
+      "title": "Man Wins Lawsuit for Enduring Mistaken Anti-Terror Manhunt",
+      "datePublished": "2015-07-07 22:00:00 +0200",
+      "url": "https://hafniatimes.com/articles/2015/07/07/antiterror-manhunt-damages/"
+    },
+    {
+      "feedId": 3,
+      "id": 2,
+      "title": "Introducing a New Open Collection of Danish Polls",
+      "datePublished": "2014-09-14 20:00:00 +0200",
+      "url": "https://hafniatimes.com/articles/2014/09/14/danish-polls/"
+    },
+    {
+      "feedId": 3,
+      "id": 3,
+      "title": "Copenhagen Police and Media Sound Anti-Terror Alarm over Woman’s Unease at Train Passenger",
+      "datePublished": "2014-08-29 22:00:00 +0200",
+      "url": "https://hafniatimes.com/articles/2014/08/29/antiterror-manhunt/"
+    },
+    {
+      "feedId": 3,
+      "id": 4,
+      "title": "A Double Standard for Street Harassment of Muslims and Jews Does Not Go Unnoticed",
+      "datePublished": "2014-08-29 20:00:00 +0200",
+      "url": "https://hafniatimes.com/articles/2014/08/29/muslims-vs-jews/"
+    }
   ]
 }
