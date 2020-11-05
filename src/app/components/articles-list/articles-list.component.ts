@@ -26,7 +26,7 @@ export class ArticlesListComponent implements OnInit {
   }
 
   fetchArticles() {
-    this.articlesSubscription = this.feedService.fetchFeedArticles(this.store.feedCurrent.feedUrl).subscribe(results => {
+    this.articlesSubscription = this.feedService.fetchFeedArticles(this.store.feedCurrent.feedId).subscribe(results => {
       this.articles = results;
     },
       (error: HttpErrorResponse) => {
