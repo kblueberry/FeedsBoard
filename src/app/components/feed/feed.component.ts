@@ -18,19 +18,17 @@ export class FeedComponent implements OnInit {
   constructor(private dataStore: DataStoreService, private feedService: FeedService) {
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   storeFeedInformation() {
     this.dataStore.feedCurrent = this.feed;
   }
 
-  //this functionality was not fully realized 
-
   deleteFeed() {
-    this.feedService.deleteFeed(this.dataStore.feedCurrent.feedId).subscribe(deleted => {
-      this.feed = deleted;
-    });
+    this.feedService.deleteFeed(this.feed.id).subscribe(() => {
+      console.log(`Feed with id = ${this.dataStore.feedCurrent.id} deleted`);
+    },
+      error => console.log(`An error occured while processing this request!`));
   }
 }
 

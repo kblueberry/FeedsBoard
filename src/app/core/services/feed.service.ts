@@ -24,10 +24,10 @@ export class FeedService {
 
 
   fetchFeedById(id) {
-    return this.http.get<Feed>(`${environment.apiUrl}/feeds?feedId=${id}`);
+    return this.http.get<Feed>(`${environment.apiUrl}/feeds?id=${id}`);
   }
 
   deleteFeed(id) {
-    return this.http.delete<Feed>(`${environment.apiUrl}/feeds?feedId=${id}`);
+    return this.http.delete<void>(`${environment.apiUrl}/feeds?id=${id}`);
   }
 }

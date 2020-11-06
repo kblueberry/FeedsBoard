@@ -41,14 +41,14 @@ export class CreateNewFeedComponent implements OnInit {
   addNewFeed() {
     const title = this.newFeed.controls['title'].value;
     const feedUrl = this.newFeed.controls['feedUrl'].value;
-    const feedId = new Date().getTime();
+    const id = new Date().getTime();
 
     if (!title || !feedUrl) {
       alert('Please enter feed title and URL!');
       return;
     }
 
-    this.feedAdd.emit({feedId, title, feedUrl} as Feed);
+    this.feedAdd.emit({id, title, feedUrl} as Feed);
     this.newFeed.reset();
   }
 }
