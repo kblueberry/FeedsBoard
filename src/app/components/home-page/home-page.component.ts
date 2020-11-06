@@ -4,6 +4,7 @@ import {Subscription} from 'rxjs';
 
 import {Feed} from 'src/app/core/models/feed.model';
 import {AuthService} from 'src/app/core/services/auth.service';
+import {DataStoreService} from 'src/app/core/services/data-store.service';
 import {FeedService} from 'src/app/core/services/feed.service';
 
 @Component({

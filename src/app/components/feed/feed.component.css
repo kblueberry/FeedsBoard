@@ -1,8 +1,13 @@
 @import '../../../assets/base-styles.css';
 
+.feed-item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .feed-item {
   padding: 10px;
-  margin: 5px 0;
   display: flex;
   justify-content: space-between;
   align-self: center;
