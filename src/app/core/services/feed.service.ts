@@ -22,11 +22,12 @@ export class FeedService {
     return this.http.get<Array<Article>>(`${environment.apiUrl}/articles?feedId=${id}`);
   }
 
-  generateId() {
-    return '_' + Math.random().toString(36).substr(2, 9);
-  }
 
   fetchFeedById(id) {
     return this.http.get<Feed>(`${environment.apiUrl}/feeds?feedId=${id}`);
+  }
+
+  deleteFeed(id) {
+    return this.http.delete<Feed>(`${environment.apiUrl}/feeds?feedId=${id}`);
   }
 }
