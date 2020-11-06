@@ -42,5 +42,6 @@
 }
 
 .delete-button {
+  padding-left: 100px;
   color: brown;
 }

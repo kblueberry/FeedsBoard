@@ -1,22 +1,24 @@
-<a
-    class="feed-item"
-    routerLink="/feeds/{{feed.id}}"
-    (click)="storeFeedInformation()"
->
-    <img
-        src="../../../assets/images/feed-icon.png"
-        alt="feed-icon"
-        class="feed-item_img"
-        width="60px"
-        height="60px"
+<div class="feed-item_wrapper">
+    <a
+        class="feed-item"
+        routerLink="/feeds/{{feed.id}}"
+        (click)="storeFeedInformation()"
     >
+        <img
+            src="../../../assets/images/feed-icon.png"
+            alt="feed-icon"
+            class="feed-item_img"
+            width="60px"
+            height="60px"
+        >
 
-    <div class="feed-item__main">
-        <p class="feed-name">{{feed.title}}</p>
+        <div class="feed-item__main">
+            <p class="feed-name">{{feed.title}}</p>
+        </div>
+    </a>
 
-        <a
-            class="delete-button"
-            (click)="deleteFeed()"
-        >Delete feed</a>
-    </div>
-</a>
+    <a
+    class="delete-button"
+    (click)="deleteFeed()"
+>Delete feed</a>
+</div>

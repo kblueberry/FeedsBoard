@@ -17,7 +17,8 @@ export class HomePageComponent implements OnInit, OnDestroy {
   feedsSubscription: Subscription;
   createNewFeed = false;
 
-  constructor(private authService: AuthService, private router: Router, private feedService: FeedService) {}
+  constructor(private authService: AuthService,
+    private router: Router, private feedService: FeedService, private store: DataStoreService) {}
 
   ngOnInit(): void {
     this.fetchFeeds();
@@ -31,6 +32,7 @@ export class HomePageComponent implements OnInit, OnDestroy {
   fetchFeeds() {
     this.feedsSubscription = this.feedService.getFeeds().subscribe((fetchedFeeds: Feed[]) => {
       this.feeds = fetchedFeeds;
+      this.store.feeds = this.feeds;
     });
   }
 

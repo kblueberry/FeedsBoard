@@ -28,6 +28,6 @@ export class FeedService {
   }
 
   deleteFeed(id) {
-    return this.http.delete<void>(`${environment.apiUrl}/feeds?id=${id}`);
+    return this.http.delete<void>(`${environment.apiUrl}/feeds/${id}`);
   }
 }

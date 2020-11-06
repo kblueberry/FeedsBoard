@@ -13,12 +13,12 @@ import {FeedService} from 'src/app/core/services/feed.service';
 export class FeedComponent implements OnInit {
   @Input() feed: Feed;
   feedArticles: Article[];
-  feeds: Feed[];
 
   constructor(private dataStore: DataStoreService, private feedService: FeedService) {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   storeFeedInformation() {
     this.dataStore.feedCurrent = this.feed;
@@ -26,7 +26,9 @@ export class FeedComponent implements OnInit {
 
   deleteFeed() {
     this.feedService.deleteFeed(this.feed.id).subscribe(() => {
-      console.log(`Feed with id = ${this.dataStore.feedCurrent.id} deleted`);
+      console.log(`Feed with id = ${this.feed.id} deleted`);
+      let indexOfFeed = this.dataStore.feeds.indexOf(this.feed);
+      this.dataStore.feeds.splice(indexOfFeed, 1);
     },
       error => console.log(`An error occured while processing this request!`));
   }
